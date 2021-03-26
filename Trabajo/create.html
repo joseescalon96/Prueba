@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><Create-Quiz></Create-Quiz></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="test.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <script>
+
+
+
+      function check(){
+  var q2 = document.createquiz.opcion.value;
+  var Boton = document.createquiz.boton.value;
+       
+  if(q2 == 1){
+      document.getElementById("numero2").style.display="none";
+      document.getElementById("numero3").style.display="none";
+      document.getElementById("numero4").style.display="none";
+      document.getElementById("numero5").style.display="none";
+
+  } else if(q2 == 2){
+   
+      document.getElementById("numero3").style.display="none";
+      document.getElementById("numero4").style.display="none";
+      document.getElementById("numero5").style.display="none";
+  } else if(q2 == 3){
+    
+      document.getElementById("numero4").style.display="none";
+      document.getElementById("numero5").style.display="none";
+  } else if(q2 == 4){
+    
+      document.getElementById("numero5").style.display="none";
+  }  ;
+
+
+}function takevalue(){
+var examName = document.getElementById("createquiz").value;
+var pregunta1 = document.getElementById("primerapregunta").value;
+var pregunta1A = document.getElementById("opcion1A");
+var pregunta1B = document.getElementById("opcion1B");
+var pregunta1C = document.getElementById("opcion1C");
+
+var pregunta2 = document.getElementById("segundapregunta").value;
+var pregunta2A = document.getElementById("opcion2A");
+var pregunta2B = document.getElementById("opcion2B");
+var pregunta2C = document.getElementById("opcion2C");
+
+var pregunta3 = document.getElementById("tercerapregunta").value;
+var pregunta3A = document.getElementById("opcion3A");
+var pregunta3B = document.getElementById("opcion3B");
+var pregunta3C = document.getElementById("opcion3C");
+
+var pregunta4 = document.getElementById("cuartapregunta").value;
+var pregunta4A = document.getElementById("opcion4A");
+var pregunta4B = document.getElementById("opcion4B");
+var pregunta4C = document.getElementById("opcion4C");
+
+var pregunta5 = document.getElementById("quintapregunta").value;
+var pregunta5A = document.getElementById("opcion5A");
+var pregunta5B = document.getElementById("opcion5B");
+var pregunta5C = document.getElementById("opcion5C");
+
+document.write("Título del examen: " + examName);
+document.write("Pregunta 1: " + pregunta1);
+document.write("A: " + pregunta1A );
+document.write("B: " + pregunta1B);
+document.write("C: " + pregunta1C);
+document.write("    ")
+
+document.write("Pregunta 2: " + pregunta2);
+document.write("A: " + pregunta2A );
+document.write("B: " + pregunta2B);
+document.write("C: " + pregunta2C);
+document.write("    ")
+
+document.write("Pregunta 3: " + pregunta3);
+document.write("A: " + pregunta3A );
+document.write("B: " + pregunta3B);
+document.write("C: " + pregunta3C);
+document.write("    ")
+
+document.write("Pregunta 4: " + pregunta4);
+document.write("A: " + pregunta4A );
+document.write("B: " + pregunta4B);
+document.write("C: " + pregunta4C);
+document.write("    ")
+
+document.write("Pregunta 5: " + pregunta5);
+document.write("A: " + pregunta5A );
+document.write("B: " + pregunta5B);
+document.write("C: " + pregunta5C);
+document.write("    ")
+
+}
+
+
+  </script>
+  <body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center">
+               <h1> Create your own quiz</h1>
+            </div>
+           </div>
+     </header>
+      <div class="container forma1">
+          <div class="row justify-content-center">
+              <div class="col-sm-6 primera">
+                  <p>detalles de examen</p>
+                <form name="createquiz" id="createquiz"> 
+                <div>
+                <label>Nombre del Examen:</label>
+                <input type="text" name="pregunta1">
+                </div>
+                <br>
+                <div>
+                <label>Cantidad de preguntas: </label>
+                <input type="number" id="opcion" min="1" max="5" name="opcion" value="0">
+                <br>
+                <input type="submit" value="submit" onclick="check()" id ="boton">
+                </div>
+                </form>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 primera">
+                    <div>
+                    <form name="numero1" id="numero1">
+                        <label>Primera Pregunta: </label>
+                        <input type="text" name="primerapregunta">
+                        <br>
+                        <p>Opciones:</p>
+                        <label>A:</label>
+                        <input type="text" name="opcion1A" id="opcion1A">
+                        <br>
+                        <label>B:</label>
+                        <input type="text" name="opcion1B" id="opcion1B">
+                        <br>
+                        <label>C:</label>
+                        <input type="text" name="opcion1C" id="opcion1C">
+                    </form>
+                    </div>
+                    <div>
+                        <br>
+                        <form name="numero2" id="numero2">
+                            <label>Segunda Pregunta: </label>
+                            <input type="text" name="segundapregunta">
+                            <p>Opciones:</p>
+                            <label>A:</label>
+                            <input type="text" name="opcion2A" id="opcion2A">
+                            <br>
+                            <label>B:</label>
+                            <input type="text" name="opcion2B" id="opcion2B">
+                            <br>
+                            <label>C:</label>
+                            <input type="text" name="opcion2C" id="opcion2C">
+                        </form>
+                        </div>
+                        <div>
+                            <br>
+                            <form name="numero3" id="numero3">
+                                <label>Tercera Pregunta: </label>
+                                <input type="text" name="tercerapregunta">
+                                <p>Opciones:</p>
+                                <label>A:</label>
+                                <input type="text" name="opcion3A" id="opcion3A">
+                                <br>
+                            <label>B:</label>
+                            <input type="text" name="opcion3B" id="opcion3B">
+                            <br>
+                            <label>C:</label>
+                            <input type="text" name="opcion3C" id="opcion3C">
+                            </form>
+                            </div>
+                            <div>
+                                <br>
+                                <form name="numero4" id="numero4">
+                                    <label>Cuarta Pregunta: </label>
+                                    <input type="text" name="cuartapregunta">
+                                    <p>Opciones:</p>
+                                    <label>A:</label>
+                                    <input type="text" name="opcion4A" id="opcion4A">
+                                    <br>
+                                    <label>B:</label>
+                                    <input type="text" name="opcion4B" id="opcion4B">
+                                    <br>
+                                    <label>C:</label>
+                                    <input type="text" name="opcion4C" id="opcion4C">
+                                </form>
+                                </div>
+                                <div>
+                                    <br>
+                                    <form name="numero5" id="numero5">
+                                        <label>Quinta Pregunta: </label>
+                                        <input type="text" name="quintapregunta">
+                                        <p>Opciones:</p>
+                                        <label>A:</label>
+                                        <input type="text" name="opcion5A" id="opcion5A">
+                                        <br>
+                                        <label>B:</label>
+                                        <input type="text" name="opcion5B" id="opcion5B">
+                                        <br>
+                                        <label>C:</label>
+                                        <input type="text" name="opcion5C" id="opcion5C">
+                                    </form>
+                                    </div>
+                                    <div>
+                                        <form>
+                                          <input type="submit" value="submit" onclick="takevalue()">
+                                        </form>
+                                    </div>
+                </div>
+
+            </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
